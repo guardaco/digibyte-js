@@ -2,19 +2,6 @@
 
 var digibyte = module.exports;
 
-// module information
-digibyte.version = 'v' + require('./package.json').version;
-digibyte.versionGuard = function(version) {
-  if (version !== undefined) {
-    var message = 'More than one instance of digibyte found. ' +
-      'Please make sure to require digibyte and check that submodules do' +
-      ' not also include their own digibyte dependency.';
-    throw new Error(message);
-  }
-};
-digibyte.versionGuard(global._digibyte);
-global._digibyte = digibyte.version;
-
 // crypto
 digibyte.crypto = {};
 digibyte.crypto.BN = require('./lib/crypto/bn');
