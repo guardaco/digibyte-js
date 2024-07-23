@@ -88,7 +88,7 @@
     "lodash": "=4.17.4"
   },
   "devDependencies": {
-    "digibyte-build": "digibyte/digibyte-build",
+    "digibyte-build": "digicontributer/digibyte-build",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.8.10",
